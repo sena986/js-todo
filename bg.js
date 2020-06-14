@@ -1,19 +1,22 @@
+const API_KEY = `l1kfOP4sXAW9kbAi1zSsgPK0ZETePf3Jsub5Qy6p6Ok`;
+
 const body = document.querySelector("body");
 
-function handleImgLoad() {
-  console.log("hello");
-}
-
-function paintImage() {
+function paintImage(random) {
   const image = new Image();
-  image.src = `https://images.unsplash.com/photo-1591749161298-e4af15ec787d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60`;
+  image.src = `./images/${random + 1}.jpg`;
   body.appendChild(image);
   image.classList.add("bg");
-  image.addEventListener("loadend", handleImgLoad);
+}
+
+function getRandom() {
+  const number = Math.floor(Math.random() * 5);
+  return number;
 }
 
 function init() {
-  paintImage();
+  const randomNumber = getRandom();
+  paintImage(randomNumber);
 }
 
 init();

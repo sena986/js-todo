@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #192a56;
   font-family: "balsamiq sans";
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1,
@@ -11,10 +19,13 @@ p,
 ul {
   color: white;
   font-weight: 700;
+  margin: 30px 0;
+  padding: 0;
 }
 
 h1 {
   font-size: 100px;
+  margin-top: 100px;
 }
 
 h4 {
@@ -59,4 +70,20 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 1s linear;
+}
+
+input {
+  border-radius: 20px;
+  outline: none;
+  text-align: center;
+  margin: 10px 0px;
+  height: 30px;
+  width: 250px;
+}
+
+.js-toDoList button {
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  border: none;
 }
