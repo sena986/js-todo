@@ -1,5 +1,3 @@
-const API_KEY = `l1kfOP4sXAW9kbAi1zSsgPK0ZETePf3Jsub5Qy6p6Ok`;
-
 const body = document.querySelector("body");
 
 function paintImage(random) {

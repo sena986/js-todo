@@ -87,3 +87,10 @@ input {
   cursor: pointer;
   border: none;
 }
+
+.js-weather {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
